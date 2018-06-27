@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/request', function(req, res) {
 	request('http://google.com', function(error, response, body) {
-            res.status(200).send(body);
+		res.status(200).send(body);
     });
 });
 
